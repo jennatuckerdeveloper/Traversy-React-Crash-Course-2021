@@ -1,0 +1,46 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "standard"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "quotes": [
+            2,
+            "single",
+            {
+                "avoidEscape": true
+            }
+        ],
+        "padded-blocks": [
+            "error",
+            "always"
+        ],
+        "jsx-quotes": [
+            "error",
+            "prefer-single"
+        ],
+        "react/react-in-jsx-scope": "off",
+        "no-unused-vars": 1,
+        "react/prop-types": 0,
+        "react/jsx-one-expression-per-line": [
+            1,
+            {
+                "allow": "single-child"
+            }
+        ]
+    }
+}
